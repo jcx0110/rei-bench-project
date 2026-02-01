@@ -759,13 +759,13 @@
       flex-wrap: nowrap;
   ">
       <div style="width: 500px; text-align: center;">
-          <img id="imgLeft" src="media/success-rate-heatmap_Model__LLaMA3.1-8B__Framework__SayCan.jpg" width="100%">
-          <p id="labelLeft">LLaMA3.1-8B + SayCan</p>
+          <img id="imgLeft" src="media/deepseek-dag.png" width="100%">
+          <p id="labelLeft">DeepSeek + DAG-Plan</p>
           <select id="selectLeft" style="width: 100%;"></select>
       </div>
       <div style="width: 500px; text-align: center;">
-          <img id="imgRight" src="media/success-rate-heatmap_Model__GPT-4o-mini__Framework__SayCan.jpg" width="100%">
-          <p id="labelRight">GPT-4o-mini + SayCan</p>
+          <img id="imgRight" src="media/deepseek-hpe.png" width="100%">
+          <p id="labelRight">DeepSeek + HPE</p>
           <select id="selectRight" style="width: 100%;"></select>
       </div>
   </div>
@@ -773,18 +773,18 @@
 
   <script>
       const imageList = [
-          { name: "LLaMA3.1-8B + SayCan", path: "media/success-rate-heatmap_Model__LLaMA3.1-8B__Framework__SayCan.jpg" },
-          { name: "GPT-4o-mini + SayCan", path: "media/success-rate-heatmap_Model__GPT-4o-mini__Framework__SayCan.jpg" },
-          { name: "DeepSeekMath-7B + SayCan", path: "media/success-rate-heatmap_Model__DeepSeekMath-7B__Framework__SayCan.jpg" },
-          { name: "Gemma2-9B + SayCan", path: "media/success-rate-heatmap_Model__Gemma2-9B__Framework__SayCan.jpg" },
-          { name: "Ministral-8B + SayCan", path: "media/success-rate-heatmap_Model__Ministral-8B__Framework__SayCan.jpg" },
-          { name: "Qwen2.5-7B + SayCan", path: "media/success-rate-heatmap_Model__Qwen2.5-7B__Framework__SayCan.jpg" },
-          { name: "LLaMA3.1-8B + LLM+P", path: "media/success-rate-heatmap_Model__LLaMA3.1-8B__Framework__LLM+P.jpg" },
-          { name: "GPT-4o-mini + LLM+P", path: "media/success-rate-heatmap_Model__GPT-4o-mini__Framework__LLM+P.jpg" },
-          { name: "DeepSeekMath-7B + LLM+P", path: "media/success-rate-heatmap_Model__DeepSeekMath-7B__Framework__LLM+P.jpg" },
-          { name: "Gemma2-9B + LLM+P", path: "media/success-rate-heatmap_Model__Gemma2-9B__Framework__LLM+P.jpg" },
-          { name: "Ministral-8B + LLM+P", path: "media/success-rate-heatmap_Model__Ministral-8B__Framework__LLM+P.jpg" },
-          { name: "Qwen2.5-7B + LLM+P", path: "media/success-rate-heatmap_Model__Qwen2.5-7B__Framework__LLM+P.jpg" },
+          { name: "DeepSeek + DAG-Plan", path: "media/deepseek-dag.png" },
+          { name: "DeepSeek + HPE", path: "media/deepseek-hpe.png" },
+          { name: "DeepSeek + SayCan", path: "media/deepseek-saycan.png" },
+          { name: "GPT + DAG-Plan", path: "media/gpt-deg.png" },
+          { name: "GPT + HPE", path: "media/gpt-hpe.png" },
+          { name: "GPT + SayCan", path: "media/gpt-saycan.png" },
+          { name: "GPT-4 + SayCan", path: "media/gpt4-saycan.png" },
+          { name: "Human (icon)", path: "media/human_icon.png" },
+          { name: "Human Baseline", path: "media/human-baseline.png" },
+          { name: "LLaMA + DAG-Plan", path: "media/llama-deg.png" },
+          { name: "LLaMA + HPE", path: "media/llama-hpe.png" },
+          { name: "LLaMA + SayCan", path: "media/llama-saycan.png" },
       ];
 
       const selectLeft = document.getElementById("selectLeft");
