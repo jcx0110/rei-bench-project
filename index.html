@@ -263,12 +263,12 @@
       transform: scale(1.02);
     }
 
-    /* Benchmark 区域图片统一尺寸 */
+    /* Benchmark 区域图片统一尺寸（拉伸填满，无白边） */
     .image-display-benchmark img {
       width: 100%;
       height: 420px;
-      object-fit: contain;
-      object-position: center;
+      object-fit: fill;
+      display: block;
     }
 
     .image-display-prompting img {
