@@ -263,6 +263,14 @@
       transform: scale(1.02);
     }
 
+    /* Benchmark 区域图片统一尺寸 */
+    .image-display-benchmark img {
+      width: 100%;
+      height: 420px;
+      object-fit: contain;
+      object-position: center;
+    }
+
     .image-display-prompting img {
       width: 70%;          /* 宽度占父容器70% */
       max-width: 500px;    /* 最大不超过500px */
@@ -751,7 +759,7 @@
     These challenges are common in real-world human-robot interactions and need to be addressed.
   </p>
   <!-- 主展示区 -->
-  <div class="image-display" style="
+  <div class="image-display image-display-benchmark" style="
       display: flex;
       justify-content: center;
       align-items: flex-start;
@@ -759,12 +767,12 @@
       flex-wrap: nowrap;
   ">
       <div style="width: 500px; text-align: center;">
-          <img id="imgLeft" src="media/deepseek-dag.png" width="100%">
+          <img id="imgLeft" src="media/deepseek-dag.png" alt="Benchmark left">
           <p id="labelLeft">DeepSeek + DAG-Plan</p>
           <select id="selectLeft" style="width: 100%;"></select>
       </div>
       <div style="width: 500px; text-align: center;">
-          <img id="imgRight" src="media/deepseek-hpe.png" width="100%">
+          <img id="imgRight" src="media/deepseek-hpe.png" alt="Benchmark right">
           <p id="labelRight">DeepSeek + HPE</p>
           <select id="selectRight" style="width: 100%;"></select>
       </div>
